@@ -71,19 +71,6 @@
         outline: 2px solid #007bff;
         outline-offset: 3px;
     }
-    .footer {
-      background-color: #f5f5f5;
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-    .footer::after {
-        content: "";
-        position: fixed;
-        top: 100%;
-        left: 0;
-        right: 0;
-        height: 100vh;
-        background-color: #f5f5f5;
-    }
     @media (min-width: 500px)
     {
         .titleCustom
@@ -111,6 +98,17 @@
     <div class="text-center">
         <img src="images/logo.jpg" class="img-fluid titleCustom ">
     </div>
+    
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6">
+                    <a href="mailto:support@gammalateral.com"><p>Email</p></a>
+                </div>
+                <div class="col-6">
+                    <a href="privacy.html"><p>Privacy Policy</p></a>
+                </div>
+            </div>
+        </div>
 
     <div id="app-sections"></div>
     <script>
@@ -301,19 +299,6 @@
     <!--        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center pb-5"><a href="https://itunes.apple.com/app/id1394344432"><img src="images/Pinball.jpg" class="img-fluid rounded imgCustom"></a><p class="text-center">Impossible Pinball</p></div>-->
     <!--        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center pb-5"><a href="https://itunes.apple.com/app/id1396367428"><img src="images/TapTapDrive.jpg" class="img-fluid rounded imgCustom"></a><p class="text-center">Tap Tap Drive</p></div>-->
     <!--        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center pb-5"><a href="https://itunes.apple.com/app/id834773729"><img src="images/AlienInvasion.jpg" class="img-fluid rounded imgCustom"></a><p class="text-center">Alien Invasion</p></div>-->
-        </div>
-    </div>
-        
-    <div class="footer fixed-bottom text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <a href="mailto:support@gammalateral.com"><p>Email</p></a>
-                </div>
-                <div class="col-6">
-                    <a href="privacy.html"><p>Privacy Policy</p></a>
-                </div>
-            </div>
         </div>
     </div>
 
