@@ -66,10 +66,13 @@
         color: inherit;
         text-decoration: none;
     }
-
     .gallery-link:focus-visible {
         outline: 2px solid #007bff;
         outline-offset: 3px;
+    }
+    .bottomBanner {
+      background-color: #f5f5f5;
+      padding: 12px 0;
     }
     @media (min-width: 500px)
     {
@@ -84,6 +87,16 @@
         {
             width: 60%;
         }
+        .horizontal-gallery img,
+        .horizontal-gallery video {
+            height: 478px;
+            width: 220px;
+        }
+        .horizontal-gallery.landscape img,
+        .horizontal-gallery.landscape video {
+            height: 220px;
+            width: 294px;
+        }
     }
     @media (min-width: 1200px)
     {
@@ -92,23 +105,19 @@
             width: 50%;
         }
     }
+    @media (min-width: 1600px)
+    {
+        .titleCustom
+        {
+            width: 40%;
+        }
+    }
 </style>
 </head>
 <body>
     <div class="text-center">
         <img src="images/logo.jpg" class="img-fluid titleCustom ">
     </div>
-    
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-6">
-                    <a href="mailto:support@gammalateral.com"><p>Email</p></a>
-                </div>
-                <div class="col-6">
-                    <a href="privacy.html"><p>Privacy Policy</p></a>
-                </div>
-            </div>
-        </div>
 
     <div id="app-sections"></div>
     <script>
@@ -301,6 +310,19 @@
     <!--        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center pb-5"><a href="https://itunes.apple.com/app/id834773729"><img src="images/AlienInvasion.jpg" class="img-fluid rounded imgCustom"></a><p class="text-center">Alien Invasion</p></div>-->
         </div>
     </div>
+    
+    <footer class="bottomBanner">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-6">
+                    <a href="mailto:support@gammalateral.com">support@gammalateral.com</a>
+                </div>
+                <div class="col-6">
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
